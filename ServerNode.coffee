@@ -30,6 +30,6 @@ http.createServer((request, response) ->
       response.end(data)
 
 
-).listen(52273, ->
-  console.log('Server Running at http://127.0.0.1:52273')
+).listen(8080, ->
+  console.log('Server Running at http://192.168.0.203:8080')
 )
