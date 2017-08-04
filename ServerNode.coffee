@@ -20,6 +20,10 @@ http.createServer((request, response) ->
     fs.readFile 'Calculator.html', (error, data) ->
       response.writeHead(200, { 'Content-Type': 'text/html'})
       response.end(data)
+   else if pathname =='/NewMember'
+    fs.readFile 'output.html', (error, data) ->
+      response.writeHead(200, { 'Content-Type': 'text/html'})
+      response.end(data)
    else if pathname =='/jquery'
     fs.readFile 'jquery/dist/jquery.js', (error, data) ->
       response.writeHead(200, { 'Content-Type': 'text/js'})
